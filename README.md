@@ -19,11 +19,13 @@ Developed by: M.CHANDRU
 Register number:212222230026
 
 import pandas as pd
-f = pd.read_csv('nba.csv')
-print(f.head(10))
-print(f.tail())
-print("Number of rows:",len(f.axes[0]))
-print("Number of columns:",len(f.axes[1]))
+df=pd.read_csv("nba.csv")
+print(df.head(10))
+print(df.tail())
+print("rows",df.axes[0])
+print("columns",df.axes[1])
+print("no.of.rows",len(df.axes[0]))
+print("no.of.columns",len(df.axes[1]))  
 ```
 ## OUTPUT:
 ![image](https://github.com/chandrumathiyazhagan/Read-from-CSV/assets/119393023/2f99dc7a-3f0f-4ca3-a952-cc73f3f63b6f)
